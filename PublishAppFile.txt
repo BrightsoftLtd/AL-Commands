@@ -1,0 +1,8 @@
+Uninstall-NAVApp -ServerInstance Test -Name "TestApp" -Version 1.0.0.0 -Verbose
+Sync-NAVApp -ServerInstance Test -Name "TestApp" -Version "1.0.0.0" -Verbose
+Unpublish-NAVApp -ServerInstance Test -Name "TestApp" -Version 1.0.0.0 -verbose
+Publish-NAVApp -ServerInstance Test -Path "D:\Zamara\Dev_TestApp_1.0.0.0.app" -SkipVerification -Verbose
+Sync-NAVApp -ServerInstance Test -Name "TestApp" -Version "1.0.0.0" -Verbose
+Install-NAVApp -ServerInstance Test -Name "TestApp" -Version "1.0.0.0" -Verbose
+Sync-NAVApp -ServerInstance Test -Name "TestApp" -Version "1.0.0.0" -Verbose
+Sync-NAVTenant -ServerInstance Test -mode ForceSync -Verbose
